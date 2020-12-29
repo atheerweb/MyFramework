@@ -1,5 +1,64 @@
-html{
+*{
+    margin: 0;
     padding:0;
-    margin:0;
     box-sizing: border-box;
+    font-family:"Changa";
+    direction: rtl;
+}
+
+@font-face{
+    src: url(../fonts/Changa-VariableFont_wght.ttf);
+    font-family: "Changa";
+}
+.navbar{
+    height:80px;
+    background-color:rgb(250, 250,250);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+      position: sticky;
+    z-index: 999;
+    top:0;
+}
+.navbar__container{
+    display: flex;
+    width:100%;
+    width:1300px;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+    margin:  0 auto;
+    padding: 0 50px;
+    height:80px;
+}
+.navbar__menu{
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+.navbar__item{
+    height:80px;
+}
+.navbar__links{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:0 1rem;
+    height:100%;
+}
+.navbar__menu a{
+    color:inherit;
+    text-decoration: none;
+}
+.navbar__logo img{
+    width:80px
+}
+.navbar__links button{
+    background-image: linear-gradient(120deg , #ef9501 , #d5431b);
+    color:white;
+    font-family: "Changa";
+    padding: 10px 15px;
+    border:none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px 1px black;
 }
