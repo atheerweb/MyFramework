@@ -100,7 +100,7 @@
         top:-9999;
         opacity: 0;
         z-index: -1;
-        transition: all 1500ms ease;
+        transition: all 300ms ease;
     }
     #button__grid
         { grid-area: 4 / 1 / 5 / 2; }
@@ -112,8 +112,8 @@
         opacity: 1;
         z-index: 99;
         height:50vh;
-        font-size: 1.4rem;
-        transition: all 1500ms ease;
+        font-size: 1.3rem;
+        transition: all 300ms ease;
     }
 
     .navbar__logo {
@@ -156,9 +156,19 @@
         padding:10px 15px;
     }
     .navbar__toggle{
-        border:orange 1px solid;
+        border:#ef9501 1px solid;
         padding:10px;
         margin-left:25px;
         border-radius: 10px;
     }
+    #mobile__menu.is-active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+    #mobile__menu.is-active .bar:nth-child(2){
+        opacity:0;
+    }
+    #mobile__menu.is-active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    
 }
