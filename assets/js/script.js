@@ -5,3 +5,7 @@ document.querySelector('.navbar__toggle').addEventListener('click', function () 
     navbar__links.classList.toggle('active');
     navbar__animation.classList.toggle('is-active');
 } );
+
+
+
+

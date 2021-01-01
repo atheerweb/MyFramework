@@ -77,9 +77,9 @@
     transition: background-color 200ms ease-out;
 }
 
-.navbar__links button:hover {
+.navbar__links button:hover , .section__btn:hover {
     background-color: #d94213;
-    transition: background-color 200ms ease-in;
+    transition: background-color 200ms ease-in;    
 }
 
 .navbar__links:hover {
@@ -88,6 +88,47 @@
 }
 
 
+
+
+
+/*Main*/
+.main__container{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    height: 100vh;
+    margin:0 auto;
+    z-index: 1;
+    width:100%;
+    max-width:1300px;
+    padding:0 50px;
+}
+.main__content h1 {
+    font-size:3.5rem;
+    background-image: linear-gradient(90deg , #ef9501 , #d94213);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color: transparent;
+}
+.main__content h2 {
+    font-size:3.5rem;
+}
+.main__content p{
+    margin-top:1rem;
+    font-size :2.3rem;
+    font-weight:500;
+    font-family: 'Tajawal', sans-serif;
+}
+.desktop__img{
+    width:590px;
+
+}
+.mobile__img{
+    display:none;
+}
+.section__btn{
+    margin:50px auto;
+    font-size:1.3rem;
+}
 @media screen and (max-width:960px) {
     .navbar__container {
         padding: 0;
@@ -173,6 +214,57 @@
     #mobile__menu.is-active .bar:nth-child(3){
         transform: translateY(-8px) rotate(-45deg);
     }
-    
+    /*Main*/
+    .main__container{
+        height: 90vh;
+        flex-direction: column;
+        text-align: center;
+        overflow: hidden;
+        padding: 0 30px;
+        margin-top:50px;
+    }
+  
+    .main__content h1{
+        font-size: 3rem;
+    }
+    .main__content h2{
+        font-size: 2.3rem;
+    }
+    .main__content p{
+        font-size: 1.6rem;
+    }
+    .section__btn{
+        margin: 30px auto;
+        font-size:1.3rem;
+    }
+    .desktop__img{
+       display: none;
+    }
+    .mobile__img{
+       display: block;
+       width:100%;
+    }
+
 }
-/*
+@media screen and (max-width:376px){
+   .navbar__links button{
+    padding: 5px 10px
+   }
+}
+@media screen and (max-width:321px){
+   
+.navbar__menu.active {
+    height: 60vh;
+}
+    .main__content h1 {
+        font-size: 2.6rem;
+    }
+
+    .main__content h2 {
+        font-size: 1.9rem;
+    }
+
+    .main__content p {
+        font-size: 1.4rem;
+    }
+}
