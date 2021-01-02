@@ -142,7 +142,7 @@
 .services__card{
     background-image:url(../imgs/l1.jpg) ;
     width:400px;
-    height:550px;
+    height:440px;
     color:white;
     margin-left:30px;
     border-radius:15px;
@@ -182,6 +182,17 @@ margin-right:30px;
     box-shadow: none;
     margin: 10px 15px 35px 10px;
     font-size: 0.9rem;
+}
+/*mobile styles*/
+.services__title{
+    background-image: linear-gradient(50deg  , #d94213 , #ef9501 );
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color:transparent;
+    -moz-text-fill-color:transparent;
+    padding-bottom:35px;
+    font-size: 3.5rem;
 }
 
 @media screen and (max-width:960px) {
@@ -277,6 +288,7 @@ margin-right:30px;
         transform: translateY(-8px) rotate(-45deg);
     }
 
+    /*Main section*/
 
     .main__container{
         display: grid;
@@ -304,8 +316,6 @@ margin-right:30px;
         display:inline-block;
         margin:  auto;
         width:80%;
-       
-
     }
     /*Portofolio section*/
     .services{
@@ -314,14 +324,18 @@ margin-right:30px;
         position: relative;
     }
     .services__card{
-        width:100%;
+        width:95%;
         height:90%;
         margin: 0;
-        position: relative;
-        top:300px;
+       
     }
     .services__card:nth-child(2){
         margin:30px 0 0 0; 
+    }
+    .services__title{
+        margin-top:200px;
+        padding-bottom:15px;
+        font-size: 2.3rem;
     }
 
 }
