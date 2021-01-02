@@ -4,6 +4,7 @@
     box-sizing: border-box;
     font-family: "Changa";
     direction: rtl;
+    background-size: cover;
 }
 
 @font-face {
@@ -67,8 +68,7 @@
     width: 80px
 }
 
-.navbar__links button,
-.section__btn {
+.button__style {
     background-color: #ef9501;
     color: white;
     font-family: "Changa";
@@ -78,19 +78,13 @@
     border-radius: 10px;
     box-shadow: 1px 1px 5px 1px grey;
     transition: background-color 200ms ease-out;
+    cursor: pointer;
 }
 
-.navbar__links button:hover,
-.section__btn:hover {
+.button__style:hover {
     background-color: #d94213;
     transition: background-color 200ms ease-in;
 }
-
-.navbar__links:hover {
-    color: #d94213;
-    transition: color 250ms ease-in;
-}
-
 
 
 .main__container {
@@ -133,7 +127,62 @@
 .mobile__img{
     display: none;
 }
+/* Services section CSS */
+.services{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height:100vh;
+}
+.services__container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.services__card{
+    background-image:url(../imgs/l1.jpg) ;
+    width:400px;
+    height:550px;
+    color:white;
+    margin-left:30px;
+    border-radius:15px;
+    transition: all 250ms ease;
+    cursor: pointer;
+}
+.services__card:hover{
+    transform:scale(1.075);
+    transition: all 250ms ease;
+}
+.services__card:nth-child(2){
+background-image: url(../imgs/l2.png);
+margin-left:0;
+margin-right:30px;
+}
+.services__card a{
+    color:white;
+    text-decoration: none;
 
+}
+.servicesop{
+    background-color: rgba(1, 1, 1, 0.5);
+    height:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-end;
+    border-radius: 15px;
+}
+.servicesop h2 {
+    margin: 10px 20px;
+}
+.servicesop p{
+    margin:10px 20px;
+}
+.services__button{
+    width:130px;
+    box-shadow: none;
+    margin: 10px 15px 35px 10px;
+    font-size: 0.9rem;
+}
 
 @media screen and (max-width:960px) {
     .navbar__container {
@@ -252,11 +301,28 @@
         display: none;
     }
     .mobile__img{
-        margin: auto;
-        display: block;
+        display:inline-block;
+        margin:  auto;
         width:80%;
+       
+
     }
-    /*Main*/
+    /*Portofolio section*/
+    .services{
+        margin: 0 30px;
+        height:100%;
+        position: relative;
+    }
+    .services__card{
+        width:100%;
+        height:90%;
+        margin: 0;
+        position: relative;
+        top:300px;
+    }
+    .services__card:nth-child(2){
+        margin:30px 0 0 0; 
+    }
 
 }
 

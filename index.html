@@ -25,17 +25,17 @@
             </div>
             <ul class="navbar__menu">
                 <li class="navbar__item">
-                    <a href="" class="navbar__links">الصفحة الرئيسية</a>
+                    <a href="#main" class="navbar__links">الصفحة الرئيسية</a>
                 </li>
                 <li class="navbar__item">
-                    <a href="" class="navbar__links">خدماتنا    </a>
+                    <a href="#services" class="navbar__links">أخر أعمالنا </a>
                 </li>
                 <li class="navbar__item">
                     <a href="" class="navbar__links">من نحن</a>
                 </li>
                 <li class="navbar__item" id="button__grid">
                     <a href="" class="navbar__links">
-                        <button>
+                        <button class="button__style">
                             تواصل معنا
                         </button>
                     </a>
@@ -44,13 +44,13 @@
         </div>
     </nav>
     <!-- main section -->
-    <div class="main">
+    <div class="main" id="main">
         <div class="main__container">
             <div class="main__content">
                 <h1>مواقع</h1>
                 <h2>من اللي قلبك يحبها</h2>
                 <p>أجمل المواقع الأسلامية و العربية</p>
-                <a href=""><button class="section__btn">شاهد أعمالنا</button></a>
+                <a href=""><button class="section__btn button__style">شاهد أعمالنا</button></a>
             </div>
             <div class="main__img__container">
                 <img src="assets/imgs/pic.svg" alt="" class="desktop__img">
@@ -60,18 +60,23 @@
         </div>
     </div>
     <!--Services-->
-    <div class="services">
+    <div class="services" id="services">
         <h1></h1>
         <div class="services__container">
             <div class="services__card">
-                <h2>خدماتنا</h2>
-                <p>شعارنا الجودة و الأتقان </p>
-                <button>تواصل معنا الأن</button>
+               <a href="https://alroaaacademy.netlify.app/" target="_blank"> <div class="servicesop">
+                    <h2>أكاديمية الرؤي</h2>
+                    <p>مشروع مبارك يهتم بتحفيظ القران عن طريق الأنترنت</p>
+                    <button class="button__style services__button">تواصل معنا الأن</button>
+                </div></a>
+      
             </div>
             <div class="services__card">
-                <h2>خدماتنا</h2>
-                <p>شعارنا الجودة و الأتقان </p>
-                <button>تواصل معنا الأن</button>
+                <a href="https://smartschools.netlify.app/" target="_blank"><div class="servicesop">
+                    <h2>Smart School</h2>
+                    <p>أول المشروعات المتجاوبة علي جميع الشاشات التي </p>
+                    <button class="button__style services__button">تواصل معنا الأن</button>
+                </div></a>
             </div>
         </div>
     </div>
