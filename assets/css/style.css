@@ -183,7 +183,6 @@ margin-right:30px;
     margin: 10px 15px 35px 10px;
     font-size: 0.9rem;
 }
-/*mobile styles*/
 .services__title{
     background-image: linear-gradient(50deg  , #d94213 , #ef9501 );
     background-size: 100%;
@@ -194,7 +193,36 @@ margin-right:30px;
     padding-bottom:35px;
     font-size: 3.5rem;
 }
-
+/*Abouutme*/
+.aboutus__container{
+    overflow: hidden;
+    display: flex;
+    flex-direction:row;
+    position: relative;
+    padding: 0 50px;
+    justify-content: center;
+    align-items: center;
+}
+.aboutme__img__container{
+    margin-left:150px;
+}
+.aboutme__img{
+    width:500px;
+    height:500px;
+}
+.aboutme__title{
+    font-size: 3.5rem;
+    background-image: linear-gradient(50deg  , #d94213 , #ef9501 );
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color:transparent;
+    -moz-text-fill-color:transparent;
+    margin: 10px;
+}
+.aboutme__p{
+    font-size: 1.3rem;
+}
 @media screen and (max-width:960px) {
     .navbar__container {
         padding: 0;
@@ -276,7 +304,7 @@ margin-right:30px;
         border-radius: 10px;
     }
 
-    #mobile__menu.is-active .bar:nth-child(1) {
+#mobile__menu.is-active .bar:nth-child(1) {
         transform: translateY(8px) rotate(45deg);
     }
 
@@ -337,7 +365,37 @@ margin-right:30px;
         padding-bottom:15px;
         font-size: 2.3rem;
     }
-
+    /*Aboutme section*/
+    .aboutus__container{
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        top: 550px;
+        text-align: center;
+        padding: 0 30px;
+    }
+    .aboutme__img__container{
+        margin:0;
+    }
+    .aboutme__img{
+        width:400px;
+        height:400px;
+        margin:auto;
+    }
+    .aboutme__title{
+        font-size: 2.3rem;
+        background-image: linear-gradient(50deg  , #d94213 , #ef9501 );
+        background-size: 100%;
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        -webkit-text-fill-color:transparent;
+        -moz-text-fill-color:transparent;
+        margin: 10px;
+    }
+    .aboutme__p{
+        font-size: 1.2rem;
+    }
 }
 
 @media screen and (max-width:376px) {
@@ -360,7 +418,7 @@ margin-right:30px;
 
     .navbar__menu.active {
         height: 60vh;
-    }
+    }.a
 
     .main__content h1 {
         font-size: 2.3rem;
@@ -376,5 +434,15 @@ margin-right:30px;
     .section__btn{
     
         font-size:1.2rem;
+    }
+    .aboutus__container{
+        top:650px;
+    }
+    .aboutme__img{
+        width:300px;
+        height:300px;
+    }
+    .aboutme__article p{
+        font-size: 1rem;
     }
 }
