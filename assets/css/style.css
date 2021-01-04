@@ -92,137 +92,182 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr;
-    width:100%;
+    width: 100%;
     max-width: 1300px;
     height: 90vh;
     margin: 0 auto;
-    z-index:1;
-    padding : 0 50px;
+    z-index: 1;
+    padding: 0 50px;
     justify-self: center;
     align-items: center;
 }
+
 .main__content h1 {
-    font-size:3.5rem;
+    font-size: 3.5rem;
     color: #d94213;
 }
+
 .main__content h2 {
-    font-size:3.5rem;
+    font-size: 3.5rem;
 }
-.main__content p{
-    margin-top:1rem;
-    font-size :2.3rem;
-    font-weight:500;
+
+.main__content p {
+    margin-top: 1rem;
+    font-size: 2.3rem;
+    font-weight: 500;
     font-family: 'Tajawal', sans-serif;
 }
-.section__btn{
-    margin:50px auto;
-    font-size:1.3rem;
+
+.section__btn {
+    margin: 50px auto;
+    font-size: 1.3rem;
 }
-.main__img__container{
+
+.main__img__container {
     text-align: center;
 }
-.desktop__img{
-    width:100%;
+
+.desktop__img {
+    width: 100%;
 }
-.mobile__img{
+
+.mobile__img {
     display: none;
 }
+
 /* Services section CSS */
-.services{
+.services {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height:100vh;
+    height: 100vh;
 }
-.services__container{
+
+.services__container {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 }
-.services__card{
-    background-image:url(../imgs/l1.jpg) ;
-    width:400px;
-    height:440px;
-    color:white;
-    margin-left:30px;
-    border-radius:15px;
+
+.services__card {
+    background-image: url(../imgs/l1.jpg);
+    width: 400px;
+    height: 440px;
+    color: white;
+    margin-left: 30px;
+    border-radius: 15px;
     transition: all 250ms ease;
     cursor: pointer;
 }
-.services__card:hover{
-    transform:scale(1.075);
+
+.services__card:hover {
+    transform: scale(1.075);
     transition: all 250ms ease;
 }
-.services__card:nth-child(2){
-background-image: url(../imgs/l2.png);
-margin-left:0;
-margin-right:30px;
+
+.services__card:nth-child(2) {
+    background-image: url(../imgs/l2.png);
+    margin-left: 0;
+    margin-right: 30px;
 }
-.services__card a{
-    color:white;
+
+.services__card a {
+    color: white;
     text-decoration: none;
 
 }
-.servicesop{
+
+.servicesop {
     background-color: rgba(1, 1, 1, 0.5);
-    height:100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content:flex-end;
+    justify-content: flex-end;
     border-radius: 15px;
 }
+
 .servicesop h2 {
     margin: 10px 20px;
 }
-.servicesop p{
-    margin:10px 20px;
+
+.servicesop p {
+    margin: 10px 20px;
 }
-.services__button{
-    width:130px;
+
+.services__button {
+    width: 130px;
     box-shadow: none;
     margin: 10px 15px 35px 10px;
     font-size: 0.9rem;
 }
-.services__title{
-    background-image: linear-gradient(50deg  , #d94213 , #ef9501 );
+
+.services__title {
+    background-image: linear-gradient(50deg, #d94213, #ef9501);
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
-    -webkit-text-fill-color:transparent;
-    -moz-text-fill-color:transparent;
-    padding-bottom:35px;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    padding-bottom: 35px;
     font-size: 3.5rem;
 }
+
 /*Abouutme*/
-.aboutus__container{
+.aboutus__container {
     overflow: hidden;
     display: flex;
-    flex-direction:row;
+    flex-direction: row;
     position: relative;
     padding: 0 50px;
     justify-content: center;
     align-items: center;
+    width: 100%;
+    max-width: 1300px;
 }
-.aboutme__img__container{
-    margin-left:150px;
+
+.aboutme__img__container {
+    margin-left: 150px;
 }
-.aboutme__img{
-    width:500px;
-    height:500px;
+
+.aboutme__img {
+    width: 500px;
+    height: 500px;
 }
-.aboutme__title{
+
+.aboutme__title {
     font-size: 3.5rem;
-    background-image: linear-gradient(50deg  , #d94213 , #ef9501 );
+    background-image: linear-gradient(50deg, #d94213, #ef9501);
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
-    -webkit-text-fill-color:transparent;
-    -moz-text-fill-color:transparent;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
     margin: 10px;
 }
-.aboutme__p{
+
+.aboutme__p {
     font-size: 1.3rem;
 }
+
+/* footer section */
+.footer__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+    width: 100%;
+    max-width: 1300px;
+}
+
+i {
+    transition: all 350ms ease;
+}
+
+i:hover {
+    transform: scale(1.075);
+    transition: all 350ms ease;
+}
+
 @media screen and (max-width:960px) {
     .navbar__container {
         padding: 0;
@@ -304,7 +349,7 @@ margin-right:30px;
         border-radius: 10px;
     }
 
-#mobile__menu.is-active .bar:nth-child(1) {
+    #mobile__menu.is-active .bar:nth-child(1) {
         transform: translateY(8px) rotate(45deg);
     }
 
@@ -318,55 +363,66 @@ margin-right:30px;
 
     /*Main section*/
 
-    .main__container{
+    .main__container {
         display: grid;
-        grid-template-columns:auto;
+        grid-template-columns: auto;
         text-align: center;
 
     }
-    .main__content h1{
+
+    .main__content h1 {
         font-size: 3rem;
     }
-    .main__content h2{
+
+    .main__content h2 {
         font-size: 2.3rem;
     }
-    .main__content p{
+
+    .main__content p {
         font-size: 1.6rem;
     }
-    .section__btn{
+
+    .section__btn {
         margin: 30px auto;
-        font-size:1.3rem;
+        font-size: 1.3rem;
     }
-    .desktop__img{
+
+    .desktop__img {
         display: none;
     }
-    .mobile__img{
-        display:inline-block;
-        margin:  auto;
-        width:80%;
+
+    .mobile__img {
+        display: inline-block;
+        margin: auto;
+        width: 80%;
     }
+
     /*Portofolio section*/
-    .services{
+    .services {
         margin: 0 30px;
-        height:100%;
+        height: 100%;
         position: relative;
     }
-    .services__card{
-        width:95%;
-        height:90%;
+
+    .services__card {
+        width: 95%;
+        height: 90%;
         margin: 0;
-       
+
     }
-    .services__card:nth-child(2){
-        margin:30px 0 0 0; 
+
+    .services__card:nth-child(2) {
+        margin: 30px 0 0 0;
     }
-    .services__title{
-        margin-top:200px;
-        padding-bottom:15px;
+
+    .services__title {
+        margin-top: 200px;
+        padding-bottom: 15px;
         font-size: 2.3rem;
     }
+
     /*Aboutme section*/
-    .aboutus__container{
+    .aboutus__container {
         overflow: hidden;
         display: flex;
         flex-direction: column;
@@ -375,25 +431,29 @@ margin-right:30px;
         text-align: center;
         padding: 0 30px;
     }
-    .aboutme__img__container{
-        margin:0;
+
+    .aboutme__img__container {
+        margin: 0;
     }
-    .aboutme__img{
-        width:400px;
-        height:400px;
-        margin:auto;
+
+    .aboutme__img {
+        width: 400px;
+        height: 400px;
+        margin: auto;
     }
-    .aboutme__title{
+
+    .aboutme__title {
         font-size: 2.3rem;
-        background-image: linear-gradient(50deg  , #d94213 , #ef9501 );
+        background-image: linear-gradient(50deg, #d94213, #ef9501);
         background-size: 100%;
         -webkit-background-clip: text;
         -moz-background-clip: text;
-        -webkit-text-fill-color:transparent;
-        -moz-text-fill-color:transparent;
+        -webkit-text-fill-color: transparent;
+        -moz-text-fill-color: transparent;
         margin: 10px;
     }
-    .aboutme__p{
+
+    .aboutme__p {
         font-size: 1.2rem;
     }
 }
@@ -402,14 +462,17 @@ margin-right:30px;
     .navbar__links button {
         padding: 5px 10px
     }
+
     /*main*/
-    .main__content h1{
+    .main__content h1 {
         font-size: 3rem;
     }
-    .main__content h2{
+
+    .main__content h2 {
         font-size: 2rem;
     }
-    .main__content p{
+
+    .main__content p {
         font-size: 1.5rem;
     }
 }
@@ -418,9 +481,9 @@ margin-right:30px;
 
     .navbar__menu.active {
         height: 60vh;
-    }.a
+    }
 
-    .main__content h1 {
+    .a .main__content h1 {
         font-size: 2.3rem;
     }
 
@@ -431,18 +494,22 @@ margin-right:30px;
     .main__content p {
         font-size: 1.3rem;
     }
-    .section__btn{
-    
-        font-size:1.2rem;
+
+    .section__btn {
+
+        font-size: 1.2rem;
     }
-    .aboutus__container{
-        top:650px;
+
+    .aboutus__container {
+        top: 650px;
     }
-    .aboutme__img{
-        width:300px;
-        height:300px;
+
+    .aboutme__img {
+        width: 300px;
+        height: 300px;
     }
-    .aboutme__article p{
+
+    .aboutme__article p {
         font-size: 1rem;
     }
 }
